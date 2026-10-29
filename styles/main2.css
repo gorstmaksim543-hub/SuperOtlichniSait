@@ -1,0 +1,92 @@
+.cont {
+    display: grid;
+    /* border: 5px solid red; */
+    grid-template-areas:
+        "elem1 elem1 elem1"
+        "elem2 elem3 elem4"
+        "elem5 elem5 elem5";
+}
+
+/* Настройки шапки */
+.shapka {
+    height: 150px;
+    grid-area: elem1;
+    background-color: rgb(255, 255, 113);
+    box-sizing: border-box;
+}
+
+.shapka>h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+}
+
+.glavnaya>p {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+}
+
+/* Настройки главного */
+.glavnoe {
+    /* border: 5px solid red; */
+    display: grid;
+    justify-content: center;
+    box-sizing: border-box;
+    grid-area: elem3;
+    margin: auto;
+    width: 1250px;
+    height: 1000px;
+}
+
+/* настройки конца */
+.konec {
+    grid-area: elem5;
+}
+
+
+/* настройка картинок */
+.gallery1 {
+    justify-content: center;
+    display: grid;
+    grid-area: elem2;
+}
+
+.gallery2 {
+    justify-content: center;
+    display: grid;
+    grid-area: elem4;
+}
+
+.Img {
+    width: 300px;
+    height: 300px;
+}
+
+.Yui {
+    grid-row: 1/2;
+}
+
+.Haruhi {
+    grid-row: 2/3;
+}
+
+.Nana {
+    grid-row: 1/2;
+}
+
+.dante {
+    grid-row: 2/3;
+}
+
+/* настройка видео */
+.opening {
+    margin: 15px;
+}
+
+.glavnoe>p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
