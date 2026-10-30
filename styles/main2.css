@@ -11,7 +11,7 @@
 .shapka {
     height: 150px;
     grid-area: elem1;
-    background-color: rgb(255, 255, 113);
+    background-color: black;
     box-sizing: border-box;
 }
 
@@ -89,4 +89,33 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
+}
+
+/* настройка разноцветного цвета */
+.raindow-text{
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        rgb(0, 225, 255),
+        blue,
+        violet,
+        red
+    );
+    background-size: 300% 100%;
+    background-clip: text;
+    color: transparent;
+    animation: raindow-anim 8s linear infinite;
+}
+
+@keyframes raindow-anim{
+    from{
+        background-position: 0% 50%;
+    }
+    to{
+        background-position: 300% 50%;
+    }
+
 }
